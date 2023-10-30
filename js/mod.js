@@ -3,11 +3,11 @@ let modInfo = {
 	id: "WeBeGubbinBaby",
 	author: "Dopler64",
 	pointsName: "Pips",
-	modFiles: ["layers.js", "tree.js"],
+	modFiles: ["globs.js", "tree.js"],
 
 	discordName: "",
 	discordLink: "",
-	initialStartPoints: new Decimal (1), // Used for hard resets and new players
+	initialStartPoints: new Decimal (0), // Used for hard resets and new players
 	offlineLimit: 1,  // In hours
 }
 

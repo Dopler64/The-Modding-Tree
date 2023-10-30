@@ -8,21 +8,19 @@ var layoutInfo = {
     
 }
 
-var basePipValue = {value: new Decimal(1),}
-
 // A "ghost" layer which offsets other layers in the tree
 addNode("blank", {
     layerShown: "ghost",
 }, 
 )
 
-addNode("P", {
+addNode("Pip", {
     layerShown: true,
-    tooltip() {return "Gain " + value + " pip"},
-    tooltipLocked() {return "Gain " + value + " pip"},
+    tooltip() {return "Gain " + new Decimal(1) + " pip"},
+    tooltipLocked() {return "Gain " + new Decimal(1) + " pip"},
     row: "0",
     canClick() {return player.points.gte(0)},
-    onClick() {player.points = player.points.add(value)}
+    onClick() {player.points = player.points.add(new Decimal(1))}
 }, 
 )
 
